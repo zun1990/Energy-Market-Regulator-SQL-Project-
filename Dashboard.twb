@@ -1,0 +1,2960 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Provider' inline='true' name='federated.130p2u80vxng9j1dixca00ikcpdk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Provider' name='textscan.06aqstc022rqz012u1jd703phbax'>
+            <connection class='textscan' directory='D:/Data Analysis Cases/American Energy Market' filename='Provider.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.06aqstc022rqz012u1jd703phbax' name='American_Energy_Market_Operator Dataset_SQL csv.csv' table='[American_Energy_Market_Operator Dataset_SQL csv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='datetime' name='Start_Time' ordinal='0' />
+            <column datatype='datetime' name='End_Time' ordinal='1' />
+            <column datatype='string' name='Facility_Code' ordinal='2' />
+            <column datatype='string' name='Participant_Code' ordinal='3' />
+            <column datatype='string' name='Status' ordinal='4' />
+            <column datatype='string' name='Reason' ordinal='5' />
+            <column datatype='real' name='Outage_MW' ordinal='6' />
+            <column datatype='integer' name='Recovery_Time_Minutes' ordinal='7' />
+            <column datatype='string' name='Description' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[American_Energy_Market_Operator Dataset_SQL csv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start_Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Start_Time]</local-name>
+            <parent-name>[American_Energy_Market_Operator Dataset_SQL csv.csv]</parent-name>
+            <remote-alias>Start_Time</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End_Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[End_Time]</local-name>
+            <parent-name>[American_Energy_Market_Operator Dataset_SQL csv.csv]</parent-name>
+            <remote-alias>End_Time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Facility_Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Facility_Code]</local-name>
+            <parent-name>[American_Energy_Market_Operator Dataset_SQL csv.csv]</parent-name>
+            <remote-alias>Facility_Code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Participant_Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Participant_Code]</local-name>
+            <parent-name>[American_Energy_Market_Operator Dataset_SQL csv.csv]</parent-name>
+            <remote-alias>Participant_Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[American_Energy_Market_Operator Dataset_SQL csv.csv]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Reason]</local-name>
+            <parent-name>[American_Energy_Market_Operator Dataset_SQL csv.csv]</parent-name>
+            <remote-alias>Reason</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outage_MW</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Outage_MW]</local-name>
+            <parent-name>[American_Energy_Market_Operator Dataset_SQL csv.csv]</parent-name>
+            <remote-alias>Outage_MW</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recovery_Time_Minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recovery_Time_Minutes]</local-name>
+            <parent-name>[American_Energy_Market_Operator Dataset_SQL csv.csv]</parent-name>
+            <remote-alias>Recovery_Time_Minutes</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[American_Energy_Market_Operator Dataset_SQL csv.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]&quot;' value='Total Outage' />
+          <alias key='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230878236675:qk]&quot;' value=' Avg Outage( min)' />
+          <alias key='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Recovery_Time_Minutes:qk]&quot;' value='Avg. Recovery Time (Minutes)' />
+          <alias key='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[sum:Outage_MW:qk]&quot;' value='Total Outage MW' />
+        </aliases>
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]) / TOTAL(COUNT([__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]))'>
+          <table-calc ordering-type='Field'>
+            <order field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' />
+            <order field='[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]' />
+          </table-calc>
+        </calculation>
+      </column>
+      <column caption='Avg Outage in Days' datatype='integer' name='[Calculation_1932607230857932801]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;,[Start_Time],[End_Time])' />
+      </column>
+      <column caption='Avg Outage min' datatype='integer' name='[Calculation_1932607230878236675]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;,[Start_Time],[End_Time])' />
+      </column>
+      <column caption='Number of Provider' datatype='integer' name='[Calculation_1932607230887129092]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Participant_Code])' />
+      </column>
+      <column caption='Total Outage ' datatype='integer' name='[Calculation_1932607230903836679]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Start_Time])' />
+      </column>
+      <column caption='End Time' datatype='datetime' name='[End_Time]' role='dimension' type='ordinal' />
+      <column caption='Facility Code' datatype='string' name='[Facility_Code]' role='dimension' type='nominal' />
+      <column caption='Outage MW' datatype='real' name='[Outage_MW]' role='measure' type='quantitative' />
+      <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+      <column caption='Recovery Time Minutes' datatype='integer' name='[Recovery_Time_Minutes]' role='measure' type='quantitative' />
+      <column caption='Start Time' datatype='datetime' name='[Start_Time]' role='dimension' type='ordinal' />
+      <column caption='American_Energy_Market_Operator Dataset_SQL csv.csv' datatype='table' name='[__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1932607230857932801]' derivation='Avg' name='[avg:Calculation_1932607230857932801:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1932607230878236675]' derivation='Avg' name='[avg:Calculation_1932607230878236675:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Outage_MW]' derivation='Avg' name='[avg:Outage_MW:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Recovery_Time_Minutes]' derivation='Avg' name='[avg:Recovery_Time_Minutes:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1932607230857932801]' derivation='Sum' name='[sum:Calculation_1932607230857932801:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1932607230878236675]' derivation='Sum' name='[sum:Calculation_1932607230878236675:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Outage_MW]' derivation='Sum' name='[sum:Outage_MW:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Start_Time]' derivation='Year' name='[yr:Start_Time:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/zunay/AppData/Local/Temp/TableauTemp/#TableauTemp_1oikzq30ctzmcw1e6r7cq037azai.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/09/2025 11:08:52 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Start_Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Start_Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Start_Time</remote-alias>
+              <ordinal>0</ordinal>
+              <family>American_Energy_Market_Operator Dataset_SQL csv.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2400</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>End_Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[End_Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>End_Time</remote-alias>
+              <ordinal>1</ordinal>
+              <family>American_Energy_Market_Operator Dataset_SQL csv.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2599</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Facility_Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Facility_Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Facility_Code</remote-alias>
+              <ordinal>2</ordinal>
+              <family>American_Energy_Market_Operator Dataset_SQL csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Participant_Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Participant_Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Participant_Code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>American_Energy_Market_Operator Dataset_SQL csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>4</ordinal>
+              <family>American_Energy_Market_Operator Dataset_SQL csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reason</remote-alias>
+              <ordinal>5</ordinal>
+              <family>American_Energy_Market_Operator Dataset_SQL csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outage_MW</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Outage_MW]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outage_MW</remote-alias>
+              <ordinal>6</ordinal>
+              <family>American_Energy_Market_Operator Dataset_SQL csv.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1118</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recovery_Time_Minutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Recovery_Time_Minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recovery_Time_Minutes</remote-alias>
+              <ordinal>7</ordinal>
+              <family>American_Energy_Market_Operator Dataset_SQL csv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>8</ordinal>
+              <family>American_Energy_Market_Operator Dataset_SQL csv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1047</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[sum:Calculation_1932607230857932801:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Outage_MW:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230878236675:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[sum:Calculation_1932607230878236675:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[sum:Outage_MW:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230857932801:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Reason:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Consequential&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Scheduled (Planned)&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Opportunistic Maintenance (Planned)&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Forced&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='American_Energy_Market_Operator Dataset_SQL csv.csv' id='American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1'>
+            <properties context=''>
+              <relation connection='textscan.06aqstc022rqz012u1jd703phbax' name='American_Energy_Market_Operator Dataset_SQL csv.csv' table='[American_Energy_Market_Operator Dataset_SQL csv#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='Start_Time' ordinal='0' />
+                  <column datatype='datetime' name='End_Time' ordinal='1' />
+                  <column datatype='string' name='Facility_Code' ordinal='2' />
+                  <column datatype='string' name='Participant_Code' ordinal='3' />
+                  <column datatype='string' name='Status' ordinal='4' />
+                  <column datatype='string' name='Reason' ordinal='5' />
+                  <column datatype='real' name='Outage_MW' ordinal='6' />
+                  <column datatype='integer' name='Recovery_Time_Minutes' ordinal='7' />
+                  <column datatype='string' name='Description' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.130p2u80vxng9j1dixca00ikcpdk'>
+      <datasources>
+        <datasource caption='Provider' name='federated.130p2u80vxng9j1dixca00ikcpdk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.130p2u80vxng9j1dixca00ikcpdk'>
+        <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+        <column-instance column='[Participant_Code]' derivation='None' name='[none:Participant_Code:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]'>
+        <groupfilter function='level-members' level='[none:Participant_Code:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]'>
+        <groupfilter function='level-members' level='[none:Reason:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]'>
+        <groupfilter function='member' level='[none:Status:nk]' member='&quot;Approved&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Average Outage Duration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f1ce63' fontname='Tableau Semibold'>Average Duration Outage (Days)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Provider' name='federated.130p2u80vxng9j1dixca00ikcpdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.130p2u80vxng9j1dixca00ikcpdk'>
+            <column caption='Avg Outage in Days' datatype='integer' name='[Calculation_1932607230857932801]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;,[Start_Time],[End_Time])' />
+            </column>
+            <column caption='End Time' datatype='datetime' name='[End_Time]' role='dimension' type='ordinal' />
+            <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+            <column caption='Start Time' datatype='datetime' name='[Start_Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1932607230857932801]' derivation='Avg' name='[avg:Calculation_1932607230857932801:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Participant_Code]' derivation='None' name='[none:Participant_Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1932607230857932801]' derivation='Sum' name='[sum:Calculation_1932607230857932801:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Start_Time]' derivation='Year-Trunc' name='[tyr:Start_Time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Start_Time]' derivation='Year' name='[yr:Start_Time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]'>
+            <groupfilter function='level-members' level='[yr:Start_Time:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230857932801:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' value='124' />
+            <format attr='text-format' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230857932801:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='cols' value='12' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='color' scope='cols' value='#f1ce63' />
+            <format attr='font-family' scope='cols' value='Tableau Semibold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]' />
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230857932801:qk]' />
+              <lod column='[federated.130p2u80vxng9j1dixca00ikcpdk].[sum:Calculation_1932607230857932801:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='10'>&lt;</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='10'>[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230857932801:qk]</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='10'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230857932801:qk]</rows>
+        <cols>([federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok] / [federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk])</cols>
+      </table>
+      <simple-id uuid='{03DA36C5-6F52-44E8-B603-B18953DCC17D}' />
+    </worksheet>
+    <worksheet name='Average Outage Energy Loss'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f1ce63' fontname='Tableau Semibold'>&lt;Sheet Name&gt; (MW)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Provider' name='federated.130p2u80vxng9j1dixca00ikcpdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.130p2u80vxng9j1dixca00ikcpdk'>
+            <column caption='Outage MW' datatype='real' name='[Outage_MW]' role='measure' type='quantitative' />
+            <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+            <column caption='Start Time' datatype='datetime' name='[Start_Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Outage_MW]' derivation='Avg' name='[avg:Outage_MW:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Participant_Code]' derivation='None' name='[none:Participant_Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Start_Time]' derivation='Year-Trunc' name='[tyr:Start_Time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' value='12' />
+            <format attr='font-family' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' value='Tableau Semibold' />
+            <format attr='font-weight' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' value='bold' />
+            <format attr='color' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' value='#f1ce63' />
+            <format attr='font-family' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]' value='12' />
+            <format attr='font-weight' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]' value='bold' />
+            <format attr='color' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]' value='#f1ce63' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Outage_MW:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Outage_MW:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='10'>&lt;</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='10'>[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Outage_MW:qk]</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='10'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</rows>
+        <cols>[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]</cols>
+      </table>
+      <simple-id uuid='{47826F6C-9A54-4353-BECD-D07A36CCC498}' />
+    </worksheet>
+    <worksheet name='Frequently Outage Occurs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#f1ce63' fontname='Tableau Semibold'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Provider' name='federated.130p2u80vxng9j1dixca00ikcpdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.130p2u80vxng9j1dixca00ikcpdk'>
+            <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+            <column caption='Start Time' datatype='datetime' name='[Start_Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='American_Energy_Market_Operator Dataset_SQL csv.csv' datatype='table' name='[__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Participant_Code]' derivation='None' name='[none:Participant_Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Start_Time]' derivation='Month-Trunc' name='[tmn:Start_Time:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[tmn:Start_Time:qk]' value='12' />
+            <format attr='font-weight' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[tmn:Start_Time:qk]' value='bold' />
+            <format attr='font-family' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[tmn:Start_Time:qk]' value='Tableau Semibold' />
+            <format attr='color' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[tmn:Start_Time:qk]' value='#f1ce63' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' />
+              <lod column='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' />
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>&lt;</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]</rows>
+        <cols>[federated.130p2u80vxng9j1dixca00ikcpdk].[tmn:Start_Time:qk]</cols>
+      </table>
+      <simple-id uuid='{A70DDFB5-779C-4D10-AE87-F1ED431594EE}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#f1ce63' fontname='Tableau Semibold' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Provider' name='federated.130p2u80vxng9j1dixca00ikcpdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.130p2u80vxng9j1dixca00ikcpdk'>
+            <column caption='Avg Outage min' datatype='integer' name='[Calculation_1932607230878236675]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;,[Start_Time],[End_Time])' />
+            </column>
+            <column caption='Number of Provider' datatype='integer' name='[Calculation_1932607230887129092]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Participant_Code])' />
+            </column>
+            <column caption='End Time' datatype='datetime' name='[End_Time]' role='dimension' type='ordinal' />
+            <column caption='Outage MW' datatype='real' name='[Outage_MW]' role='measure' type='quantitative' />
+            <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+            <column caption='Recovery Time Minutes' datatype='integer' name='[Recovery_Time_Minutes]' role='measure' type='quantitative' />
+            <column caption='Start Time' datatype='datetime' name='[Start_Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='American_Energy_Market_Operator Dataset_SQL csv.csv' datatype='table' name='[__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1932607230878236675]' derivation='Avg' name='[avg:Calculation_1932607230878236675:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Recovery_Time_Minutes]' derivation='Avg' name='[avg:Recovery_Time_Minutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Recovery_Time_Minutes]' derivation='Max' name='[max:Recovery_Time_Minutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Participant_Code]' derivation='None' name='[none:Participant_Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outage_MW]' derivation='Sum' name='[sum:Outage_MW:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Recovery_Time_Minutes]' derivation='Sum' name='[sum:Recovery_Time_Minutes:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1932607230887129092]' derivation='User' name='[usr:Calculation_1932607230887129092:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230878236675:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[sum:Outage_MW:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Recovery_Time_Minutes:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[usr:Calculation_1932607230887129092:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[max:Recovery_Time_Minutes:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230878236675:qk]&quot;</bucket>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]&quot;</bucket>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[sum:Outage_MW:qk]&quot;</bucket>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Recovery_Time_Minutes:qk]&quot;</bucket>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[usr:Calculation_1932607230887129092:qk]&quot;</bucket>
+              <bucket>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[sum:Recovery_Time_Minutes:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='font-size' value='10' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#00aaff' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-family' value='Tableau Semibold' />
+            <format attr='font-size' value='12' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#f1ce63' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[Multiple Values]' />
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='15'><![CDATA[<[federated.130p2u80vxng9j1dixca00ikcpdk].[Multiple Values]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#f1ce63' fontname='Tableau Semibold' fontsize='12'><![CDATA[<[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{90DF88E7-4C6B-467B-BC67-438D9A021EAF}' />
+    </worksheet>
+    <worksheet name='Most Common Outage Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffbe7d' fontname='Tableau Semibold' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Provider' name='federated.130p2u80vxng9j1dixca00ikcpdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.130p2u80vxng9j1dixca00ikcpdk'>
+            <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+            <column caption='Start Time' datatype='datetime' name='[Start_Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='American_Energy_Market_Operator Dataset_SQL csv.csv' datatype='table' name='[__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Participant_Code]' derivation='None' name='[none:Participant_Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Start_Time]' derivation='Year' name='[yr:Start_Time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' data-class='total' scope='rows' value='Tableau Semibold' />
+            <format attr='font-size' data-class='total' scope='rows' value='12' />
+            <format attr='color' data-class='total' scope='rows' value='#f1ce63' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' value='12' />
+            <format attr='font-weight' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' value='bold' />
+            <format attr='color' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' value='#f1ce63' />
+            <format attr='font-family' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' value='Tableau Semibold' />
+            <format attr='font-size' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]' value='12' />
+            <format attr='font-weight' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]' value='bold' />
+            <format attr='font-family' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]' value='Tableau Semibold' />
+            <format attr='color' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]' value='#f1ce63' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='font-family' scope='rows' value='Tableau Semibold' />
+            <format attr='font-family' scope='cols' value='Tableau Semibold' />
+            <format attr='color' scope='cols' value='#f1ce63' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='font-size' scope='cols' value='10' />
+            <format attr='font-size' scope='rows' value='10' />
+            <format attr='color' scope='rows' value='#00aaff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='10'>&lt;</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='10'>[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='10'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.9010497331619263' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</rows>
+        <cols>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]</cols>
+      </table>
+      <simple-id uuid='{0B8338BB-E66A-4E62-A9DF-7B6CC0AEA26F}' />
+    </worksheet>
+    <worksheet name='Number of Outage between Provider'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f1ce63' fontname='Tableau Semibold' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Provider' name='federated.130p2u80vxng9j1dixca00ikcpdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.130p2u80vxng9j1dixca00ikcpdk'>
+            <column caption='Avg Outage in Days' datatype='integer' name='[Calculation_1932607230857932801]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;day&apos;,[Start_Time],[End_Time])' />
+            </column>
+            <column caption='Total Outage ' datatype='integer' name='[Calculation_1932607230903836679]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Start_Time])' />
+            </column>
+            <column caption='End Time' datatype='datetime' name='[End_Time]' role='dimension' type='ordinal' />
+            <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+            <column caption='Start Time' datatype='datetime' name='[Start_Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column caption='American_Energy_Market_Operator Dataset_SQL csv.csv' datatype='table' name='[__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1932607230857932801]' derivation='Avg' name='[avg:Calculation_1932607230857932801:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Participant_Code]' derivation='None' name='[none:Participant_Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1932607230903836679]' derivation='User' name='[usr:Calculation_1932607230903836679:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.130p2u80vxng9j1dixca00ikcpdk].[__tableau_internal_object_id__].[cnt:American_Energy_Market_Operator Dataset_SQL csv.csv_960D1B6979464223B7AF10F15A1322C1:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='10' />
+            <format attr='font-family' value='Tableau Semibold' />
+            <format attr='color' value='#f1ce63' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>&lt;</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#75a1c7' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230857932801:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>&lt;</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>&gt;</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.4942541122436523' />
+                <format attr='mark-color' value='#75a1c7' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.130p2u80vxng9j1dixca00ikcpdk].[usr:Calculation_1932607230903836679:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>&lt;</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>&gt;</run>
+                <run fontcolor='#00aaff' fontname='Tableau Semibold'>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.4942541122436523' />
+                <format attr='mark-color' value='#75a1c7' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.130p2u80vxng9j1dixca00ikcpdk].[usr:Calculation_1932607230903836679:qk] + [federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230857932801:qk])</rows>
+        <cols>([federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk] / [federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk])</cols>
+      </table>
+      <simple-id uuid='{3FBAE748-3810-483C-B472-8E264191ADFB}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Provider' name='federated.130p2u80vxng9j1dixca00ikcpdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.130p2u80vxng9j1dixca00ikcpdk'>
+            <column caption='Avg Outage min' datatype='integer' name='[Calculation_1932607230878236675]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;minute&apos;,[Start_Time],[End_Time])' />
+            </column>
+            <column caption='End Time' datatype='datetime' name='[End_Time]' role='dimension' type='ordinal' />
+            <column caption='Outage MW' datatype='real' name='[Outage_MW]' role='measure' type='quantitative' />
+            <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+            <column caption='Start Time' datatype='datetime' name='[Start_Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1932607230878236675]' derivation='Avg' name='[avg:Calculation_1932607230878236675:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Outage_MW]' derivation='Avg' name='[avg:Outage_MW:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Participant_Code]' derivation='None' name='[none:Participant_Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Start_Time]' derivation='Year' name='[yr:Start_Time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Calculation_1932607230878236675:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Outage_MW:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]' value='163' />
+            <format attr='width' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]' value='474' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]</rows>
+        <cols>[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{00BE421A-81B8-4918-8C58-1B18B2564A54}' />
+    </worksheet>
+    <worksheet name='YoY Outage Percentage'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f1ce63' fontname='Tableau Semibold'>YoY Outage Percentage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Provider' name='federated.130p2u80vxng9j1dixca00ikcpdk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.130p2u80vxng9j1dixca00ikcpdk'>
+            <column caption='Total Outage ' datatype='integer' name='[Calculation_1932607230903836679]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Start_Time])' />
+            </column>
+            <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+            <column caption='Start Time' datatype='datetime' name='[Start_Time]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Participant_Code]' derivation='None' name='[none:Participant_Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1932607230903836679]' derivation='User' name='[pcto:usr:Calculation_1932607230903836679:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Start_Time]' derivation='Year' name='[yr:Start_Time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>2016</bucket>
+              <bucket>2017</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</column>
+            <column>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' value='268' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='12' />
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='color' scope='rows' value='#f1ce63' />
+            <format attr='font-family' scope='rows' value='Tableau Semibold' />
+            <format attr='font-size' scope='cols' value='12' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='font-family' scope='cols' value='Tableau Semibold' />
+            <format attr='color' scope='cols' value='#f1ce63' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.130p2u80vxng9j1dixca00ikcpdk].[pcto:usr:Calculation_1932607230903836679:qk:1]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.130p2u80vxng9j1dixca00ikcpdk].[pcto:usr:Calculation_1932607230903836679:qk:1]' />
+              <text column='[federated.130p2u80vxng9j1dixca00ikcpdk].[pcto:usr:Calculation_1932607230903836679:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</rows>
+        <cols>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]</cols>
+      </table>
+      <simple-id uuid='{0744847E-A24D-4F49-AD8B-ADE37EEA5D0E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='1168' maxwidth='2266' minheight='1168' minwidth='2266' preset-index='17' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Provider' name='federated.130p2u80vxng9j1dixca00ikcpdk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.130p2u80vxng9j1dixca00ikcpdk'>
+        <column caption='Participant Code' datatype='string' name='[Participant_Code]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Reason]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+        <column-instance column='[Participant_Code]' derivation='None' name='[none:Participant_Code:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Reason]' derivation='None' name='[none:Reason:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98630' id='21' param='vert' type-v2='layout-flow' w='99294' x='353' y='685'>
+            <zone h='98630' id='19' param='vert' type-v2='layout-flow' w='99294' x='353' y='685'>
+              <zone h='98630' id='17' type-v2='layout-basic' w='99294' x='353' y='685' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='95205' id='3' is-scaled='1' param='D:/Data Analysis Cases/Tableau/HR Dashboard/HR background.pptx.jpg' type-v2='bitmap' w='100221' x='-397' y='342' />
+        <zone h='14983' id='5' name='Most Common Outage Type' w='11518' x='81377' y='9503' />
+        <zone h='39726' id='6' name='Frequently Outage Occurs' w='25419' x='6443' y='25428' />
+        <zone h='28339' id='7' name='Number of Outage between Provider' w='61695' x='31068' y='66438' />
+        <zone h='18921' id='8' name='YoY Outage Percentage' w='30627' x='32436' y='25685' />
+        <zone h='28339' id='9' name='Average Outage Duration' w='24360' x='6311' y='66524' />
+        <zone h='20719' id='10' name='Average Outage Energy Loss' w='30627' x='32480' y='44521' />
+        <zone forceUpdate='true' h='39640' id='11' type-v2='text' w='29259' x='63592' y='25599'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#f1ce63' fontname='Tableau Semibold' fontsize='15'>Summary :</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>*** Most common outage type occur is FORCED type events.</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>*** Most least outage occur is Opportunistic Maintenance events.</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>*** Scheduled(Planned) outage stayed longer duration in both 2016 &amp; 2017.</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>***  Auricon participant has the most outage of 875 over the years.</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>*** GW, AURICON, MELK are the top 3 unreliable providers. It has the highest overall total energy loss.</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>*** Forced outage events almost  increase 10% with in the year.</run>
+            <run>Æ&#10;&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone h='14897' id='12' name='KPI' w='74272' x='6487' y='9589' />
+        <zone h='7021' id='13' mode='dropdown' name='KPI' param='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' type-v2='filter' w='21271' x='71624' y='1284' />
+        <zone h='7534' id='14' mode='dropdown' name='KPI' param='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]' type-v2='filter' w='19153' x='50397' y='771' />
+        <zone h='7192' id='15' mode='dropdown' name='KPI' param='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]' type-v2='filter' w='13416' x='34863' y='1027' />
+        <zone h='7192' id='22' type-v2='text' w='26346' x='6355' y='1199'>
+          <formatted-text>
+            <run bold='true' fontcolor='#f1ce63' fontname='Tableau Semibold' fontsize='20'>American Energy Market Regulator Insights</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2350' minheight='2350' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98630' id='23' param='vert' type-v2='layout-flow' w='99294' x='353' y='685'>
+                <zone fixed-size='280' forceUpdate='true' h='95205' id='3' is-fixed='true' is-scaled='1' param='D:/Data Analysis Cases/Tableau/HR Dashboard/HR background.pptx.jpg' type-v2='bitmap' w='100221' x='-397' y='342'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7192' id='22' type-v2='text' w='26346' x='6355' y='1199'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#f1ce63' fontname='Tableau Semibold' fontsize='20'>American Energy Market Regulator Insights</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='175' h='14983' id='5' is-fixed='true' name='Most Common Outage Type' w='11518' x='81377' y='9503'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7021' id='13' mode='dropdown' name='KPI' param='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' type-v2='filter' w='21271' x='71624' y='1284'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7534' id='14' mode='dropdown' name='KPI' param='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]' type-v2='filter' w='19153' x='50397' y='771'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7192' id='15' mode='dropdown' name='KPI' param='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]' type-v2='filter' w='13416' x='34863' y='1027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='174' h='14897' id='12' is-fixed='true' name='KPI' w='74272' x='6487' y='9589'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39726' id='6' is-fixed='true' name='Frequently Outage Occurs' w='25419' x='6443' y='25428'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='39640' id='11' type-v2='text' w='29259' x='63592' y='25599'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#f1ce63' fontname='Tableau Semibold' fontsize='15'>Summary :</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>*** Most common outage type occur is FORCED type events.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>*** Most least outage occur is Opportunistic Maintenance events.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>*** Scheduled(Planned) outage stayed longer duration in both 2016 &amp; 2017.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>***  Auricon participant has the most outage of 875 over the years.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>*** GW, AURICON, MELK are the top 3 unreliable providers. It has the highest overall total energy loss.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#00aaff' fontname='Tableau Semibold' fontsize='12'>*** Forced outage events almost  increase 10% with in the year.</run>
+                    <run>Æ&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='221' h='18921' id='8' is-fixed='true' name='YoY Outage Percentage' w='30627' x='32436' y='25685'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='242' h='20719' id='10' is-fixed='true' name='Average Outage Energy Loss' w='30627' x='32480' y='44521'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='28339' id='7' is-fixed='true' name='Number of Outage between Provider' w='61695' x='31068' y='66438'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='28339' id='9' is-fixed='true' name='Average Outage Duration' w='24360' x='6311' y='66524'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{71ED5DEB-A032-42A7-A3D3-7552926DCE94}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' type='filter' />
+            <card param='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]' type='filter' />
+            <card param='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7C80F4DD-ED5B-42D3-8EBA-AB922D437A27}' />
+    </window>
+    <window class='worksheet' name='Most Common Outage Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Status:nk]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:End_Time:ok]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A465BEA9-D33C-4D3E-9DB0-A90E7654A19F}' />
+    </window>
+    <window class='worksheet' name='Frequently Outage Occurs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DD87872C-561A-42C8-AF5F-5B0F291F153A}' />
+    </window>
+    <window class='worksheet' name='Number of Outage between Provider'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='37'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Participant_Code:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A7810083-AF22-402A-B352-4018F989A589}' />
+    </window>
+    <window class='worksheet' name='Average Outage Duration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:End_Time:ok]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3F6974CC-1C30-4742-89CD-DFF2748BB9E8}' />
+    </window>
+    <window class='worksheet' name='YoY Outage Percentage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.130p2u80vxng9j1dixca00ikcpdk].[pcto:usr:Calculation_1932607230903836679:qk:1]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{04E96BD0-6099-43D3-B963-ECA9711111DD}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1AE8FD2F-7D0F-41F0-AC75-14A5783FD754}' />
+    </window>
+    <window class='worksheet' name='Average Outage Energy Loss'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Outage_MW:qk]</field>
+                  <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</field>
+                  <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>103.6606886792453</value>
+                <value>&quot;Opportunistic Maintenance (Planned)&quot;</value>
+                <value>#2016-01-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[none:Reason:nk]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[tyr:Start_Time:ok]</field>
+            <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[yr:Start_Time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4A3CB92B-394C-4C98-8AD2-786582BFFE0E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Average Outage Duration'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Outage Energy Loss'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Frequently Outage Occurs'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]</field>
+                    </x-fields>
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[:Measure Names]</field>
+                    <field>[federated.130p2u80vxng9j1dixca00ikcpdk].[Multiple Values]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>&quot;[federated.130p2u80vxng9j1dixca00ikcpdk].[avg:Recovery_Time_Minutes:qk]&quot;</value>
+                  <value>4.2766289504486927</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Most Common Outage Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Number of Outage between Provider'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='YoY Outage Percentage'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{2DE336FC-B720-435D-8AD6-8E2D817E17C0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Average Outage Duration' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAC1klEQVR4nO3Yva5NURiG0W/tzSFoJBKh5ELotK5VodG4A6VKozpCQRDndy2tiHpvyTNG
+      Oau3eTJn5rJt2zYQtTv2ADimG8cewGH8fdEvM/Ovq39ZloPs+V8IIGBbr+bi0+vZ1vPZ3X48
+      1z8/zMmD53Px+c3cevRyLr++m1kv5uThi5nZH3vuQXkCFSz72d99Osv+zqxnp3Py4Nlc//o4
+      +ztPZrZ1rn+8n/Xy68z12bGXHpwACtazOT99NbM7meXGvbn48nZ2N+/P1ff3c/nt3exuP55Z
+      z2fbro699OAWv0Ax2zbbrLMs+z+Otpm/zioEQJonEGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgT
+      AGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEj7DfHkT4xCHP/BAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Average Outage Energy Loss' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Frequently Outage Occurs' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='KPI' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Most Common Outage Type' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Number of Outage between Provider' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAOc0lEQVR4nO3d248cZX7G8e9bVX2anvPYM7bHNjYnAzbmHEhgF1ZkiSAH5SLRJkpWykZK
+      FCkXucpNFCW5yG3+iyiH3YuNtJE2ESRLAiHZBRsbvIABAx7b2OMZe049PX2oqjcX7wCGaaDb
+      0109M+/zkayeHlfbv5Hqmbeq3rd+Zay1FhFPBf0uQKSfFADxmgIgXlMAxGsKgHhNARCvKQDi
+      taiTja1NaMz9hCA/QdqY//Q1LE4TDR8FIE4hNJCufya1YABjXNoqMQxGsBzDcAQJ7u9D080f
+      S6Q9HQUADMaEJNWPCEvTpPWrBIVJ0uYiANbC370LD43B5RokFmZrsJbArYNQDsECy03IGcDA
+      y/Pw2AR871CXfzKRNnR4CGQw+XFy44+BiYiGj4FNCcu3AbCawKU1eH0RVmKoxtBMYakJxQAW
+      m3B8BBop3DfqRoO7huCNxR78ZCJtMN1cClGNoWlhNXY7fWRgIIJ84Hb2fUX42XW4dwROL8Ej
+      Y250uNaAO4e6VYVI+7oagE80Gg2azWbb25fL5W6XINKWDs8B2vPmR3P88/9daGvbW8bz/Omv
+      PdiLMkS+li6DitcUAPGaAiBeUwDEawqAeE0BEK8pAOI1BUC81uFqUEu8eAKTH8PW5wmKUyS1
+      y4SlA4Sl/b2qUaRnOhwBLGn9Mmn1PJiAeOUdTFAkqc70pjqRHuv4EMhEQ5jcCDZeJShOY5sL
+      BPmJXtQm0nMdHQIZE5Df9VSPShHJnk6CxWsKgHhNARCvKQDiNQVAvKYAiNcUAPGaAiBeUwDE
+      awqAeK3j1aDYGEwAaROCPKQNCAoYo+aesv102BfIEq+8RVq7AjbGhCVsUsPkx8mPP9abCkV6
+      qOPFcKRNcmOPEC//HJtUMbkRNyr0wH/MwpUajOZdM93EQjmCb+7uyX8nHupsBLCWsHwbJjdK
+      OHCIID/u2qQXJntS3HsVOFx2Ldb/8yqM5ODZvT35r8RTnQXAGIL8GADhwAH3GvWur+cvT8JL
+      1+CZKfe8gdDAETXRlS7qSW/Qbrl9yP0BmC71txbZmbZcAE6/d5EX3rzc1rb7xwp851vHe1yR
+      7GRbLgC12DJbSdradrDY3nYiX0YTYeI1BUC8pgCI1xQA8ZoCIF5TAMRrCoB4rePl0M1rLxMO
+      3EJcOUuQnyBtzBMWp4mGj/aqRpGe6XAxXEKyNoNNqgT5MdL6VYLCJGlTj3qX7amzQyATkhu5
+      j3DwDjAR0fAxsClh+bYelSfSWx3eD2DcTn8DPRdAtjOdBIvXFADx2pZbDbpZlRj+/QocKkMj
+      hXMVODoMQzlYbkJs4YFRyCn6wg4MQDV2t0/eOwIGuLQG+0pwrQFvLbttfmG8ryXKFtIyANZa
+      bLyMiQYxJsy6pk3JBfCNXe7rcgTVxN1Qf3IJDg1AYKCWQHF7/VjSIy0DEC++ho0rBIXJbTfB
+      NZaH3zm48fvfUCcJaaFlAMKBQzQXXyUo7sm6nk15/+JVzswstLXtrsE8Txw/3OOKZKtrGYBk
+      9QNMOEjj6vMUpr+zbbq+XV2q8cr77QXgzskST+h2Yu+1vBYSlPaTVN4jN/5L22bnF7kZLQOQ
+      1mcJB2/DpvWs6xHJVMtDoKC4jyB394ZFbtZa4qXXCYp7SKsXCIpTJLXLhKUDWhIh29KGEcDt
+      5KdpLp7ARBvbsKX1q645rgmIV97BBEWS6kwmxYp024YAGGOIRu6FtOF29C9+IL8LsNh4laA4
+      jW0uEOQnsqhVpOtazwQnDWzaIMiNfu7bxhhyYw9nUZdIJjYeAiU14srbrvNzvNSPmkQys/Eq
+      UJDDBHk3E5wb60NJItnZcAhkTEh+99P9qEUkcxsCYJMazYWfYeMKubFHCApaRCM718arQGER
+      ExbBxqSN6/2oSSQzrSfCSgcJCpOYUE+lkJ2t5URY8/orJNXz7rGoIjtYy4mwsHy7e/JjstaP
+      mkQy03o1aGEXJixj8rp3UHa2jYdAaYPG3IvYtAZWjyCSna3FSXBAfuJxwoFbWn4gjSuQ1kkb
+      111bxNoVgtI+ghYL50S2uo0TYUH0pTu/tZZk+YwbHUyeZPUDgtwocWOe/MTjPS9WpNs6645j
+      Y2zaIG0uYZsLmLBI2pjDBLkelSfSW531Bg1y5Hd9EwBrUwwGi9Vtk7Jt3XRjLGPc4GHQzi/b
+      lxoEitcUAPGaAvAFcQrWQrL+J07da2pd413ZWXZcc9zNSC385Rn4jWm4WHV9Ra11rwY4PgpP
+      7Op3ldJNGgFucKUG9RRevQ5LTVhLYCB0DXcT4Ijm+nYcjQA3KEfwt8fczj9Xh5Gc2/kN7nWm
+      CrsL/a5SukkBWFev14lid5A/gtv5AUg/e70rD6urbsXswMBAP8qULlMA1v307GX+9dTGPkit
+      3LN3gD/4tjrr7gQKQJdYC00L0fq8YGrd4PHJewuEmjPccjoMgMUmNQgKkDYgyK+/FrxfDpEC
+      f3UGJotwfAReX3TPKNtXdIdTF9bgz+7od5XyRR0FwFqIl9/ExivYpIYJS+41P05+/LFe1bht
+      1FJ4dByu1txjmU4vu/dnllwYZOvpeAQwuRFsXMFEw9ikismNuNsnPRcAf34EJgtwcgGe2A3f
+      OwxzNXhozM0lyNbT+TmAtUSjD2KbK659YmOeoDDZg9K2j3q9ThzHjAKNNThWBNZ/J+wNgCbk
+      0RWkraiz5dAmIBq6y71Zb5wbRuWuF7XdvPL2x/z4jdm2tr13epDvPn2sxxVJu3QVqM9uPDcI
+      jbt6FBn3QG+DO68oh24d0mAEnl9r6DoFoM++f8Ettju74nbwhQY8txd+cBHuGYZm6oIwnIPf
+      OwgFPd+4q7QWqM+Oj8CxEbf8IjRuvdG/XYGjw+7vD5fhvlH4cBVWdK2h6zQC9Nmtg+7y8l/c
+      7UaC0MCv3DChdmkNpktuUd5Evr+17kQKQJ9FcY0kSfj0WTz286/DBSB1V5ZqtYBSSf1au0kB
+      6LOX3rrE82fm2tr2gYND/O5TR3tckV90DiBeUwDEazoE2gE+qMAPL7mFeA+PwbkKXFyD2wfh
+      6ckvnztIrPtcMYAPVmEocvMP9RT2FuE3p3f+ClaNADvAWuLuYANYbsJHVXcH24erX/05a+Hv
+      z8No3l1piq276+3jNbha733dW0GHq0Et8dJJTDSEbSwQFKdIapcJSwcIS/t7VaN8jd0F+JPb
+      YE/RTaA9tRvOV91v+K8SGPibo1BP3Ne3D8L9o591wHhpDp7cvbNnnzs+BDLRELa5DCYgXnmH
+      oDBFUp1RAPposvjZ199d72t8bOTrPxcYt8P7rOPl0MnKWcLho6TVGYLiNLYxR1Cc7k118pX+
+      +/Q5Xj3X3oMM75ke4tlH7/r0/U9ef5+THy609dl7D4zwzCN3bvj+Dy64ThrlyM1c//ASPLMH
+      5uvwW/tdwLa6jleDFvb+untTvrUX9UgHqg3LbKW9Gw0O1j9/PLTaSNv+7OEvuZtndv08YS2B
+      Ewtu4d77Ffijw9vnsElXgeSmPTYOD47BG0tuLdOjEzCeg+9fhN/eiSOAyI0eXn+E3BfPIw4P
+      Zl/LzVIApGMvvPYep2cW29r2/ltGefqhrdsNQAGQjlU6OH9YbWztZ00rAJIpa90JM7ibe6YK
+      7iT63KprPPziVbhrGA5mdNu0AiCZ+9FlN8H2L+fdDHQ5cpNvr113N/+sND+//UrTXWJ9cAx+
+      et2dfDdSd6XpyBD87zU3A/6tSXhhFu4edg2On93z+TmSVrQUQjIXrP95YBTeXnHfq8Rwx5C7
+      NfTVL0xtvDgH356C04vu6tLzs3BmGd5ahtXYrX0ywMvzLiA/X4J3Vtx6qH+Ygf+ag3+agVOL
+      rmVNPYF/nHGjkUYAyZQx8NfrtzQ8heuddKM43bgA76ExN2ocGXI77v2j7rf+4TL8z7wbQT5c
+      hf0D8PgELDbdazGEsRwcGnA7/oEBFxaL+/zTkwqAZMhay9nzV2i02STslslhRobK7CvBH6/P
+      uz65270+1WYrqpUmRIFbL7XUhI9rLmC/uhdeW1AAJGM/OnGBudX2+kT+4ZOHGRlyfafSNOX5
+      E++z1mzvqtIvHpliamKURyfc+99fXyP13N7PtqnENxGAtD6PyQ2RVGcICpOktSsEpX0EkR6f
+      Ir1jreXU+UWuVdsLz9EDY0yt7/xJkvD8iXPU4o3h6Xg5dHPpFNHwUdL6HMnqBwS5UeLGPPmJ
+      xzv5p0QyY63l5PlFFtc2hqfzq0Bpg3TtEra5gAmLpI05TJD7+s+JbEEdrgY1FPY8B4C1KQaD
+      xXr/bADZvm76JNgYN3gYtPPL9qWJMPGaAiBeUwDEawqAeE0BEK8pAOI1BUC8tqkAWGuJV86S
+      xivdqkckU5sbAZIqtrlIvPRGl8oRydbmAhBEWgsk29qm7gcwQYH81HNaCyTblrHWbu2+FSI9
+      tLmT4DSmuXSKuPJut+oRydQmD4EiTFjGhBk1cRHpsk1fBrXJKmFJ7dFle9I5gHhNM8HiNbVF
+      kUypN6h4r9PeoL2kQyDJXKe9QXtJJ8GypXzSGzSrxQU6BJLM3Gxv0F5SACRTN9sbtFd0DiBe
+      UwDEawqAeE0BEK8pAOI1BUC8pgCI1xQA8dqmb4hpLp4grc92qx6RTG26L1BSeZe0Pt+lckSy
+      tbkAhEWC4j7co4dFtp/N3RRvQvK7nuxWLSKZ00mweE0BEK8pAOI1BUC8pgCI1xQA8ZoCIF5T
+      AMRrCoB4TQEQrykA4jUFQLymAIjXFADxmgIgXtv8LZELr5LW57pVj0imNjkCpKT1WdLmUneq
+      EcnYJgNgCfK7Ia13pxqRjG3ylsiI3Pij3apFJHM6CRavKQDiNQVAvKYAiNcUAPGaAiBea3kZ
+      tLn0BmntY8KBw0RDR7KuSSQzLQMQFKYICpOYaDDrekQy1fIQyJiQxuyPSVbeQo1vZSdrGYC0
+      MU9QOkBQ3IfV/i87WMsA2KSKCSJssoYxJuuaRDLz/88tnb0Y/LyvAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 6' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFsElEQVR4nO3d32uVdQDH8c9ztjX1uA2XujlNqe3CXCpulb+yaT8GGeQPggqCqH+km6C7
+      bqILhUqXGqENTBFF7IdNSylLh/lrtmRzc+yX+3HOds52nqcLA0tlh4y2g5/36+48Xw48X/i+
+      H74Ph8M3iKIoEmAqNtU3AEwlAoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoC1/Dsv9PX1KZFITMW9AJMu4P8AcMYWCNYIANYIANYIANYIANYIANYIANYIANYIANYIANYI
+      ANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYI
+      ANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANYIANayBpBO9uu3c2fV0t4rSRpL9OnM
+      6VNq6719mnx3Z4dGxjO3xkcH9OsPTWr+/YZCzuBGjssSwJCO7z+kKx1dOtrwoX66MazGT7br
+      SnubvmzYpbaBEZ08uFPvvr9NHcNpRambOrC7QZd6RtR67ZrCkACQ27IEMEPrtr6m+lXVml4g
+      RUOtah95VBs3bdWK+Smd/2NAlbX1erqqRJko0mBniy70SxXFhVq08BHFYsHkzAK4T1kCiCnR
+      dVGf7fxCpWvf0JNlkmLTFIsFKijIU2o8o7J585T/1zofHRlUJp1RJkzr8I4GtSYz//sEgP9i
+      4gDGb+rQ3iNatvltvbyySoqXKxi+rJ6+HrVdH1bF3FkKMxlFUaQwDFUye77i0+OqXrlGC2dG
+      So6xBUJuC6JogjfVRJf2Nn6lzv4RBbE81W15R6X9p7T/2FlVLH9eL60s18Fde9QxIknFqn99
+      i4q6zqjxm3Oau6ROrz63XHlsg5DDJg7gniKFYaQgCBQEdy/uKIoURZGCIKZ7DAM55T4CAB4c
+      /BAGawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAa/l3XgjDUBwdDBd3BTA2NqZMJjMV9wJMOrZAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsHbXQdl3Sg11
+      q7n5kh4qr9Kyx8qVHuzSydNntWDpKlWVFUuSOq61qmTeQuWN9qq5+YKS45IUV80zNSrKozHk
+      riyrc1BNh48rmT9Nv+z7SE1t/fp8+8dKFxTq8O4dutqb0LG92/TeB5+qM5lWFEUaHx9XKtmj
+      xn2HlAqjSZkEcL+yBDBT67du1opFxUoGcT0cXtdAQbXWrntWtZWFutw+qFUb39S6x+dIkqaX
+      lGl13QZVzwm05MVXVJrP0x+5LcsKDXTj8intafxOtZve0uLSmAIFt0aCQEEQKB6PKwhufyOT
+      7NPRpja9sOEJxf4+AOSgiQNI9ejIgROqXL1eFTNCJfLLNW2sRRcvnldLe0oL5hapu6NdA0PD
+      6ursUjI9rs4rZ5RaUKvKoqyvF8CUC6Io+sdGPZVKKZPJ3Pow2q/vT/yovuG0FMS0dE29iocv
+      qennFs2pqtFTi2fp9NffqjctSTNUU7dase6r0uzFmj+rcPJnA/xLEwcAPOB4S4U1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1
+      AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoA1AoC1
+      PwHp2W6AIlp1dgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='104' name='YoY Outage Percentage' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
